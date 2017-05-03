@@ -1,23 +1,22 @@
 const myBike = {
-  name: "Roadster",
+  name: 'Roadster',
   price: 199.99,
-  frame: new frame() {
+  frame: {
     height: 55,
     color: 'blue',
-    stlye: 'cruiser'
-  }
-  brakes: new brakes() {
+    style: 'cruiser'
+  },
+  brakes: {
     front: false,
     back: true
-  }
-  tires: new tires() {
+  },
+  tires: {
     diameter: 22,
     type: 'fat'
-  }
-  rings: new rings() {
-    front: 2,
-    back: 5
-  }
+  },
+
+  rings: [2, 5],
+
 }
 
 
