@@ -1,29 +1,26 @@
 
-function Frame(color, size, style) {
-  this.color = 'black';
-  this.size = 55;
-  this.style = 'street';
+function Frame(color = 'black', size = 55, style = 'street') {
+  this.color = color,
+  this.size = size,
+  this.style = style
 }
 
-let myFrame = new Frame();
-
-function myFrame() {
-  this.color = 'blue',
-  this.size = 60,
-  this.style = 'mountain'
-};
-
-// myFrame.color = 'blue';
-// myFrame.size = 60;
-// myFrame.style = 'mountain';
-
-function Tire() {
+function Tire(diameter = 22, type = 'street') {
+  this.diameter = diameter,
+  this.type = type
 }
 
-function Bike() {
-
+function Bike(name = 'Speedster', price = 250.00) {
+  this.name = name,
+  this.price = price,
+  this.tires = [new Tire(), new Tire()],
+  this.frame = new Frame(),
+  this.rings = [3, 7],
+  this.brakes = {
+    front: true,
+    back: true
+  }
 }
-
 
 module.exports = {
   Bike: Bike,
